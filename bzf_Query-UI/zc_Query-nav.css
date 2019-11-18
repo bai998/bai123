@@ -1,0 +1,179 @@
+/* 
+导航    不兼容移动端
+ */
+ .nav{
+     display: block;
+     width: 100%;
+     /* 高度不可以受限制 */
+ }
+ .nav,.nav>ul{
+     padding: 0 10px;
+ }
+ .nav li{
+     list-style: none;
+     float: left;
+ }
+ .nav::after{
+     content: '';
+     display: table;
+     visibility: hidden;
+     clear: both;
+ }
+ .nav{
+     zoom: 1;
+ }
+ .nav li>a{
+     display: inline-block;
+     text-decoration: none;
+     font-size: 14px;
+     color: #000;
+     padding: 15px;
+ }
+
+ .nav{
+     width: 100%;
+     border-bottom: 1px solid #ccc;
+ }
+ /* 基础类导航 */
+ .nav-top .active>a{
+     border: 1px solid #ccc;
+     border-bottom: 1px solid #fff;
+     border-top-right-radius: 5px;
+     border-top-left-radius: 5px;
+     box-shadow: 1px 1px 15px 0px #ccc;
+     font-weight: bold;
+ }
+.nav-top li{
+    position: relative;
+    top: 1px;
+    z-index: 1;
+}
+/* tab切换样式的导航 */
+.nav-tab li{
+    position: relative;
+    top: 1px;
+}
+.nav-tab li>a{
+    border: 1px solid transparent;
+}
+.nav-tab li>a:hover{
+    border: 1px solid #ccc;
+    border-bottom: 1px solid #fff;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    box-shadow: 1px 1px 15px 0px #ccc;
+    font-weight: bold;
+}
+/* 胶囊样式导航 */
+.nav-pills .active>a{
+    background-color: #94d6da;
+    color: #fff;
+}
+.nav-pills li>a:hover{
+    background-color: #94d6da;
+    color: #fff;
+}
+.nav-pills{
+    box-shadow: 0px 2px 5px 0px #ccc;
+}
+/* 侧边栏导航 */
+.nav-stacked li{
+    width: 100%;
+    text-align: center;
+}
+.nav-stacked li>a{
+    width: 100%;
+    text-align: center;
+}
+/* 背景色为深色的导航栏 */
+.nav-inverse{
+    background-color: #545c64;
+}
+.nav-inverse .active>a{
+    color: #ffba5e;
+    border-bottom: 2px solid #ffba21;
+}
+.nav-inverse li>a{
+    color: #fff;
+}
+.nav-inverse li>a:hover{
+    color: #ffba21;
+    border-bottom: 2px solid #ffba21;
+}
+/* 背景色为深色的横向的导航栏 */
+.nav-inverse-stcked{
+    background-color: #545c64;
+}
+.nav-inverse-stcked li{
+    width: 100%;
+    text-align: center;
+}
+.nav-inverse-stcked li>a{
+    width: 100%;
+    color: #fff;
+}
+.nav-inverse-stcked li>a:hover{
+    color: #ffba5e;;
+    background-color: #288085;
+}
+.nav-inverse-stcked .active>a{
+    color: #ffba5e;
+    background-color: #288085;
+}
+/* 背景色为黑深色的导航栏 */
+.nav-inverse-black{
+    background-color: #272c2c;
+}
+.nav-inverse-black .active>a{
+    color: #fff;
+    border-bottom: 2px solid #545c64;
+}
+.nav-inverse-black li>a{
+    color: #799fd8;
+}
+.nav-inverse-black li>a:hover{
+    color: #fff;
+    border-bottom: 2px solid #545c64;
+}
+/* 背景色为黑深色的横向的导航栏 */
+.nav-inverse-blackStcked{
+    background-color: #272c2c;
+}
+.nav-inverse-blackStcked li{
+    width: 100%;
+    text-align: center;
+}
+.nav-inverse-blackStcked li>a{
+    width: 100%;
+    color: #799fd8;
+}
+.nav-inverse-blackStcked li>a:hover{
+    color: #fff;;
+    background-color: #545c64;;
+}
+.nav-inverse-blackStcked .active>a{
+    color: #fff;
+    background-color: #545c64;
+}
+/* 定位 */
+.nav-fixed-top{
+    position: relative;
+    top: 0;
+}
+.nav-fixed-left{
+    position: relative;
+    left: 0;
+}
+.nav-fixed-right{
+    position: relative;
+    right: 0;
+}
+.nav-fixed-right-15{
+    position: relative;
+    right: 15px;
+}
+
+
+
+
+

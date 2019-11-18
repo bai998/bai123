@@ -1,0 +1,107 @@
+/* 这里写分页面的样式 */
+
+.Page {
+  width: 100%;
+}
+.pagination {
+  display: inline-block;
+  margin: 0 -15px;
+}
+.pagination > li > a {
+  display: inline-block;
+  padding: 15px;
+  border: 1px solid #ccc;
+  text-decoration: none;
+  color: #383030;
+}
+.pagination > li {
+  display: inline-block;
+  /* float: left; */
+  list-style: none;
+}
+
+/* 清除浮动 */
+.clearFix::after {
+  content: "";
+  display: block;
+  visibility: hidden;
+  clear: both;
+}
+.clearFix {
+  zoom: 1;
+}
+/* pagination-bgc */
+.pagination-bgc > li > a {
+  background-color: #f4f4f4;
+  color: #303133;
+  font-size: 12px;
+  padding: 5px 10px;
+  border: 1px solid #f4f4f4;
+  font-weight: 900;
+}
+.pagination-bgc .active > a {
+  background-color: #0653fa;
+  color: #fafafa;
+}
+.pagination-bgc > li > a:hover {
+  background-color: #0653fa;
+  color: #fafafa;
+}
+/* pagination-nobgc */
+.pagination-nobgc > li > a {
+  color: #303133;
+  font-size: 14px;
+  padding: 5px;
+  border: 1px solid transparent;
+  font-weight: 900;
+}
+.pagination-nobgc .active > a {
+  background-color: #0653fa;
+  color: #fafafa;
+}
+.pagination-nobgc > li > a:hover {
+  background-color: #0653fa;
+  color: #fafafa;
+}
+/* pagination-inverse */
+.pagination-inverse > li > a {
+  background-color: #393d49;
+  color: #ccc;
+  font-size: 14px;
+  border: 1px solid #393d49;
+  padding: 5px 10px;
+}
+.pagination-inverse > li {
+  float: left;
+}
+.pagination-inverse > li > a:hover {
+  background-color: #fff;
+  color: #ff000f;
+  border: 1px solid #fff;
+}
+.pagination-inverse .active > a {
+  background-color: #fff;
+  color: #ff000f;
+  border: 1px solid #fff;
+}
+/* pagination-inverse-lg */
+.pagination-inverse-lg > li > a {
+  background-color: #393d49;
+  color: #ccc;
+  font-size: 16px;
+  border: 1px solid #393d49;
+  padding: 8px 16px;
+}
+.pagination-inverse-lg > li {
+  float: left;
+}
+.pagination-inverse-lg > li > a:hover {
+  background-color: #fff;
+  color: #ff000f;
+  border: 1px solid #fff;
+}
+.pagination-inverse-lg .active > a {
+  background-color: #fff;
+  color: #ff000f;
+  border: 1px solid #fff;
+}
