@@ -1,0 +1,49 @@
+/* 
+导航条组件：兼容移动端
+1. 所有的元素状态默认认为显示状态
+@media 以为是 所有屏幕共有的样式：
+*/
+
+.navbar {
+    display: none;
+}
+
+.navbar-default {
+    display: block;
+    background-color: #333333;
+    color: #ccc;
+}
+
+.navbar-inverse{
+    display: block;
+    color: #383838;
+}
+
+/* 默认移动端，让下拉提示按钮为显示隐藏 */
+.collapse{
+    display: block;
+}
+
+.navbar-header{
+    width: 100%;
+    display: inline-block;
+    float: none;
+}
+
+
+
+@media screen and (min-width:768px){
+    .navbar-header{
+        float: left;
+    }
+    /* 平板 电脑 固有的样式 */
+    .navbar-header>.navbar-toggle.collapse{
+        display: none;
+    }
+
+}
+
+/* .navbar> */
+
+
+
